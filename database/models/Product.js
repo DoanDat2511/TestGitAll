@@ -66,7 +66,7 @@ const updateProduct = async (productId, updatedProduct) => {
   try {
     let product = await Product.findById(productId);
     if (!product) {
-      throw `Không tìm thấy product với Id=${productId}`;
+      throw `Không tìm thấy product với  1Id=${productId}`;
     }
     product.name = !updatedProduct.name ? product.name : updatedProduct.name;
     product.description = !updatedProduct.description
