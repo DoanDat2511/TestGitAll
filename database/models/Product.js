@@ -85,7 +85,7 @@ const deleteProduct = async (productId) => {
   try {
     let product = await Product.findById(productId);
     if (!product) {
-      throw `Không tìm thấy blogpost với Id=${productId}`;
+      throw `Không tìm thấy blogpost với loi Id=${productId}`;
     }
     await Product.deleteOne({ _id: productId });
   } catch (error) {
