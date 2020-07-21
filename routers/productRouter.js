@@ -1,8 +1,7 @@
 /**
- Khoá học FullStackNodejs 2019 - Techmaster Vietnam
  Khoá học FullStackNodejs 2019 - Techmaster Vietnam dpn 1
  Instructor: Nguyễn Đức Hoàng
- Routers for "Product" collectionddd
+ Routers for "Product" collection
  */
 const express = require("express");
 const router = express.Router();
@@ -58,7 +57,7 @@ router.get("/queryProducts", async (req, res) => {
     });
   }
 });
-//VD1: http://127.0.0.1:3000/blogposts/queryProductsByDateRange?
+//VD1: http://127.0.0.1:3000/blogposts/queryProductsByDateRange? themc chuc nag
 //from=01-11-2018&to=05-11-2018
 router.get("/queryProductsByDateRange", async (req, res) => {
   let { from, to } = req.query;
