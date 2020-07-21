@@ -1,5 +1,6 @@
 /**
  Khoá học FullStackNodejs 2019 - Techmaster Vietnam
+ Khoá học FullStackNodejs 2019 - Techmaster Vietnam dpn 1
  Instructor: Nguyễn Đức Hoàng
  Routers for "Product" collectionddd
  */
@@ -44,7 +45,7 @@ router.get("/queryProducts", async (req, res) => {
   debugger;
   let { text } = req.query;
   try {
-    let products = await queryProducts(text);
+    let products = await queryProducts(text); //3
     res.json({
       result: "ok",
       message: "Query thành công danh sách Product",
