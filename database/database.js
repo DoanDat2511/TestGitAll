@@ -1,7 +1,7 @@
 /**
  Khoá học FullStackNodejs 2019 - Techmaster Vietnam
  Instructor: Nguyễn Đức Hoàng
- File này chứa các Models, Schemas, hàm kết nối CSDL MongoDB
+ File này chứa các Models, Schemas, hàm kết nối CSDL MongoDBddddat
  */
 const mongoose = require('mongoose')
 //Kết nối CSDL MongoDB
